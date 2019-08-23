@@ -2,7 +2,6 @@
 #main {
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "content content content" "footer footer footer";
-    grid-template-rows: 10vh 40vh 25vh 25vh;
     }
     .mainHeader {grid-area: header; background:#595e96;}
     .mainNav {grid-area: nav; background: #595e96;}
@@ -22,7 +21,7 @@
 .mainHeader {
     background: #595e96;
     width: 2500px;
-    height: 0px;
+    height: 10vh;
     display: flex;
     }
 
@@ -31,6 +30,9 @@
     width: 2500px;
     height: 1875px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     }
 
 .mainContent {
@@ -38,8 +40,9 @@
     width: 2500px;
     height: 625px;
     display: flex;
-    flex-direction: initial;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     }
 
 .mainFooter {
@@ -52,11 +55,21 @@
 
 /*nav */
 
+.mainNav {
+}
+
+#logo-icon {
+    width: 1000px; 
+    height: 600px;
+    justify-content: center;  
+    }
+
 h1 {
     color: white;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 120px;
+    justify-content: center;  
     }
         
 h2  {
@@ -65,12 +78,18 @@ h2  {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px;
     text-align: right;
+    justify-content: end;  
+
     }
 
 /*content */    
 
 .link {
-
+    width: 720px; 
+    height: auto; 
+    alt: initial;
+    grid-area: auto;
+    margin-top: 100px;
     }
 
 /*footer */
