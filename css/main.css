@@ -1,8 +1,11 @@
-* {padding: 0; margin: 0}
+
+* {padding: 0; margin: 0;}
+
 #main {
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" 
     "content content content" "footer footer footer";
+    justify-content: center;
     }
     .mainHeader {grid-area: header; background:#595e96;}
     .mainNav {grid-area: nav; background: #595e96;}
@@ -33,6 +36,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-items: center;
     align-items: center;
     line-height: 600px;
     }
@@ -52,8 +56,11 @@
     width: 2500px;
     height: 625px;
     display: flex;
-    flex-wrap: wrap;
-    }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    } 
 
 /*nav */
 
@@ -62,8 +69,8 @@
 
 .IMG.displayed {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 40px;
+    margin-right: 40px;
     width: 40px; 
     height: 60px;
     }
@@ -97,21 +104,30 @@ h2  {
 
 /*footer */
 
+input, textarea {
+    border: 3px solid;
+    border-color: black;
+    }
 
-h3 {
-color:black;
-text-decoration: none;
-font-family: 'Roboto', sans-serif;
-font-size: 60px;
-text-align: left;
-}
+.email input {
+    color:grey;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    width: 1200px;
+    height: 100px;
+    }
 
-h4 {
-color:black;
-text-decoration: none;
-font-family: 'Roboto', sans-serif;
-font-size: 60px;
-text-align: none;
-}
 
-        
+.enviar input {
+    background: #cc4d00;
+    color:white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    height: auto;
+    width: 300px;
+    }
+
+   
