@@ -60,19 +60,18 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
-    } 
+} 
 
 /*nav */
 
 .mainNav {
 }
 
-.IMG.displayed {
+#display {
     display: block;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 40px; 
-    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
     }
 
 h1 {
@@ -107,17 +106,19 @@ h2  {
 input, textarea {
     border: 3px solid;
     border-color: black;
+    position: relative;
+    float: left;
     }
 
 .email input {
     color:grey;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 80px;
     width: 1200px;
     height: 100px;
     }
-
 
 .enviar input {
     background: #cc4d00;
@@ -127,7 +128,12 @@ input, textarea {
     font-size: 80px;
     font-weight: bold;
     height: auto;
-    width: 300px;
+    width: 400px;
+    cursor: pointer;
+    }
+
+.enviar input:hover {
+    background:#595e96;
     }
 
    
