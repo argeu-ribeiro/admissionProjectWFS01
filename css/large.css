@@ -1,4 +1,4 @@
-    /*breakpoints */
+    /*ARCH RESPONSIVE | CSS LARGE | BREAKPONTS*/
 
 * {padding: 0; margin: 0;}
 .main {
@@ -20,7 +20,7 @@
         .mainFooter {grid-area: footer; background: #d7d7d7;}
                           
     #main {grid-template-areas: "header" "content" "footer";}
-    .mainNav {grid-area: header; margin-top: 0px;}    
+    .mainNav {grid-area: header; margin-top: 0vh;}    
     
     /*body */
 
@@ -38,6 +38,16 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        }  
+
+        img.displayed {
+            width: 450px;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15vh;
+            border: 1px solid #595e96;
         }
     
         h1 {
@@ -48,16 +58,6 @@
             text-align: center;
             margin-top: 15vh;
             }
-    
-        .display {
-            display: block;
-            border: 1px solid #595e96;
-            height: 25vh;
-            max-width: 0vh;
-            margin-top: 0vh;
-            object-fit: cover;
-            object-position: bottom;
-            }
                 
         h2  {
             color:white;
@@ -65,7 +65,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 32px;
             text-align-last: right;
-            margin-top: 25vh;
+            margin-top: 35vh;
             }
 
     .mainContent {
@@ -91,6 +91,8 @@
         background: #d7d7d7;
         width: 1100px;
         height: 250px;
+        display: ruby-base-container;
+        text-align: center;
         } 
     
         input, textarea {
@@ -98,7 +100,9 @@
             border-color: black;
             position: relative;
             float: left; 
-            margin-top: 100px;    
+            margin-top: 15vh;
+            margin-left: 15vw;
+            margin-right: -15vw;
             }
         
         .email input {

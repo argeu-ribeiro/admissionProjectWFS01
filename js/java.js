@@ -4,8 +4,8 @@ Author: Argeu Ribeiro
 */
 
 function Submit(){
-    var nome;
-    nome= alert ("E-mail Cadastrado com Sucesso!");
+    var nome="O email usuario@future4.com.br foi enviado!";
+    alert (nome);
 }
 
 function mySubmit(e) { 
@@ -17,3 +17,4 @@ function mySubmit(e) {
     }
     return false;
   }
+
