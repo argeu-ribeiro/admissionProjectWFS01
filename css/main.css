@@ -13,7 +13,7 @@
         
 /*breakpoints */
         
-    @media screen and (max-width: 768px){
+    @media screen and (min-width: 0px) and (max-width: 1100px){
     body {background: black;}   
     #main {grid-template-areas: "header" "content" "footer";}
     .mainNav {grid-area: header; margin-top: 0px;}    
@@ -24,20 +24,17 @@
 .mainHeader {
     background: #595e96;
     width: 1100px;
-    height: 10px;
+    height: 80px;
     display: flex;
     }
 
 .mainNav {
     background: #595e96;
     width: 1100px;
-    height: 590px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    line-height: 150px;
     }
 
 .mainContent {
@@ -54,20 +51,16 @@
     background: #d7d7d7;
     width: 1100px;
     height: 250px;
-    display: -moz-inline-grid;
-
-} 
+    display: flex;
+    } 
 
 /*nav */
 
-.mainNav {
-}
-
-#display {
+.display {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%; 
+    margin-top: 120px;
+    border: 1px solid #595e96;
+    object-fit: contain;
     }
 
 h1 {
@@ -76,14 +69,16 @@ h1 {
     font-family: 'Livvic', sans-serif;    
     font-size: 40px;
     text-align: center;
+    margin-top: 50px;
     }
         
 h2  {
     color:white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    text-align: right;
+    font-size: 32px;
+    text-align-last: right;
+    margin-top: 280px;
     }
 
 /*content */    
@@ -100,10 +95,11 @@ h2  {
 /*footer */
 
 input, textarea {
-    border: 3px solid;
+    border: 1px solid;
     border-color: black;
     position: relative;
-    float: left;
+    float: left; 
+    margin-top: 100px;    
     }
 
 .email input {
@@ -111,9 +107,9 @@ input, textarea {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    width: 400px;
-    height: 40px;
+    font-size: 25px;
+    width: 450px;
+    height: 45px;
     }
 
 .enviar input {
@@ -121,10 +117,10 @@ input, textarea {
     color:white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    width: 150px;
-    height: 46px;
+    width: 180px;
+    height: 47px;
     cursor: pointer;
     }
 
